@@ -2,20 +2,9 @@ pipeline {
     agent any
     stages {
         stage('Example') {
-            steps { /* <1> */
-                echo 'Hello World'
-            }
-        }
-        stage('Example 2') {
-            steps { /* <1> */
-                echo 'Hello World 2'
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
-    post { /* <1> */
-                always{ /* <2> */
-                    echo 'I will always say Hello again!'
-                }
-            }
 }
-    
