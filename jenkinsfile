@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+   environment { /* <1> */
+        CC = 'clang'
+}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+        stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+    }
+}
