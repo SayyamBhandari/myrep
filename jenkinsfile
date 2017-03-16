@@ -28,7 +28,7 @@ pipeline {
             }
 }
 
-stage('Example') {
+stage('Example1') {
             environment { /* <2> */
                 DEBUG_FLAGS = '-g'
             }
@@ -37,7 +37,7 @@ stage('Example') {
             }
 }
 
-stage('Example') {
+stage('Example2') {
             environment { /* <2> */
                 DEBUG_FLAGS = '-g'
             }
@@ -46,7 +46,7 @@ stage('Example') {
             }
 }
 
-stage('Example') {
+stage('Example3') {
             environment { /* <2> */
                 DEBUG_FLAGS = '-g'
             }
@@ -55,7 +55,7 @@ stage('Example') {
             }
 }
 
-stage('Example') {
+stage('Example4') {
             environment { /* <2> */
                 DEBUG_FLAGS = '-g'
             }
@@ -64,7 +64,7 @@ stage('Example') {
             }
 }
 
-stage('Example') {
+stage('Example5') {
             environment { /* <2> */
                 DEBUG_FLAGS = '-g'
             }
