@@ -27,5 +27,51 @@ pipeline {
                 sh 'printenv'
             }
 }
+
+stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+
+stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+
+stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+
+stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+
+stage('Example') {
+            environment { /* <2> */
+                DEBUG_FLAGS = '-g'
+            }
+            steps {
+                sh 'printenv'
+            }
+}
+
     }
 }
